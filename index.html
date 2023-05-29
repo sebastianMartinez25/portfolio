@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>portafolio</title>
+  
+</head>
+<body>
+  <div id="app">
+    <h1>Cotizaciones portafolio</h1>
+    <table border="1">
+      <thead>
+      <tr>
+      <th>ACCIÓN</th>
+      <th>PRECIO</th>
+      
+      
+      </tr>
+      </thead>
+      <tbody>
+      <tr v-for="lista in listaDatos">
+      <td>{{lista[0]}}</td>
+      <td>{{lista[1]}}</td>
+      </tr>
+      </tbody>
+      </table>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="portfolio.js"></script>
+</body>
+</html>
